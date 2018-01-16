@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace StatTrackerLib
 {
-    public class Class1
+    class TeamModel
     {
+        public List<Person> TeamMembers { get; set; }
+        public string TeamName { get; set; }
     }
 }
