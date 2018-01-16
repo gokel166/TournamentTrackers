@@ -8,5 +8,8 @@ namespace StatTrackerLib
 {
     public class MatchupModel
     {
+        public List<MatchupEntryModel> Entry { get; set; } = new List<MatchupEntryModel>();
+        public TeamModel Winner { get; set; }
+        public int MatchupRound { get; set; }
     }
 }
