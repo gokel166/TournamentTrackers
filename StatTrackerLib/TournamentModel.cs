@@ -11,7 +11,7 @@ namespace StatTrackerLib
         public string TournamentName { get; set; }
         public decimal EntryFee { get; set; }
         public List<TeamModel> EnteredTeams { get; set; } = new List<TeamModel>();
-        public List<PrizedModel> Prizes { get; set; } = new List<PrizedModel>();
+        public List<PrizeModel> Prizes { get; set; } = new List<PrizeModel>();
         public List<List<MatchupModel>> Rounds { get; set; } = new List<List<MatchupModel>>();
     }
 }
