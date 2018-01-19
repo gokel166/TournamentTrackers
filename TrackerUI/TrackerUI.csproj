@@ -116,7 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StatTrackerLib\StatTrackerLib.csproj">
-      <Project>{d152bb02-d55c-4ec9-a6ba-4256cc1b6dc5}</Project>
+      <Project>{D152BB02-D55C-4EC9-A6BA-4256CC1B6DC5}</Project>
       <Name>StatTrackerLib</Name>
     </ProjectReference>
   </ItemGroup>

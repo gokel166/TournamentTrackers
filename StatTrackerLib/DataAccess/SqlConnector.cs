@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using StatTrackerLib.Models;
 
-namespace StatTrackerLib.Models
+namespace StatTrackerLib.DataAccess
 {
     public class SqlConnector : IDataConnection
     {
@@ -16,8 +18,10 @@ namespace StatTrackerLib.Models
         /// <returns>The prize information including the prize identifier.</returns>
         public PrizeModel CreatePrize(PrizeModel model)
         {
-            model.Id = 1;
-            return model;
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString("Tournaments")))
+            {
+                //
+            }
         }
     }
 }
