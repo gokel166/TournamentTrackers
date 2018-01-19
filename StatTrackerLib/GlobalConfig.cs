@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StatTrackerLib.DataAccess;
 
-namespace StatTrackerLib
+namespace StatTrackerLib.Models
 {
     public class GlobalConfig
     {
@@ -22,7 +23,7 @@ namespace StatTrackerLib
             if (textFiles)
             {
                 // Create the Text Connection
-                TextConnection text = new TextConnection();
+                TextConnector text = new TextConnector();
                 Connections.Add(text);
             }
         }
