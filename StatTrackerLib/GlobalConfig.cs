@@ -22,6 +22,8 @@ namespace StatTrackerLib
             if (textFiles)
             {
                 // Create the Text Connection
+                TextConnection text = new TextConnection();
+                Connections.Add(text);
             }
         }
     }
