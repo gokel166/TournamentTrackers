@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StatTrackerLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,7 +19,7 @@ namespace TrackerUI
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Initialize the database connection
-            StatTrackerLib.Models.GlobalConfig.InitializeConnection(true, true);
+            StatTrackerLib.Models.GlobalConfig.InitializeConnections(DatabaseType.Sql);
 
             Application.Run(new CreatePrizeForm());
             //Application.Run(new TournamentDashboardForm());
