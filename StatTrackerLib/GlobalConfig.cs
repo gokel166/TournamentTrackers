@@ -12,16 +12,16 @@ namespace StatTrackerLib.Models
     {
         public static IDataConnections Connections { get; private set; }
 
-        public static void InitializeConnection(bool database, bool textFiles)
+        public static void InitializeConnections(string connectionType)
         {
-            if (database)
+            if (connectionType == "sql")
             {
                 // Set up SQL Connector properly
                 SqlConnector sql = new SqlConnector();
                 Connections = sql;
             }
             
-            else if (textFiles)
+            else if (connectionType == "text")
             {
                 // Create the Text Connection
                 TextConnector text = new TextConnector();
