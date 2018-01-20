@@ -10,7 +10,7 @@ namespace StatTrackerLib.Models
 {
     public class GlobalConfig
     {
-        public static List<IDataConnection> Connections { get; private set; } = new List<IDataConnection>();
+        public static List<IDataConnection> Connections { get; private set; }
 
         public static void InitializeConnection(bool database, bool textFiles)
         {
@@ -18,10 +18,10 @@ namespace StatTrackerLib.Models
             {
                 // Set up SQL Connector properly
                 SqlConnector sql = new SqlConnector();
-                Connections.Add(sql);
+                Connections = sql;
             }
             
-            if (textFiles)
+            else if (textFiles)
             {
                 // Create the Text Connection
                 TextConnector text = new TextConnector();
