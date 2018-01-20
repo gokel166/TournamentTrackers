@@ -34,6 +34,11 @@ namespace StatTrackerLib.Models
         /// </summary>
         public double PrizePercentage { get; set; }
 
+        public PrizeModel()
+        {
+
+        }
+
         // override constructor method to convert strings to int and decimals
         public PrizeModel(string placeName, string placeNumber, string prizeAmount, string prizePercentage)
         {
