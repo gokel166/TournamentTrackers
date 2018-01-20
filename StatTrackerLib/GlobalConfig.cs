@@ -10,7 +10,7 @@ namespace StatTrackerLib.Models
 {
     public class GlobalConfig
     {
-        public static List<IDataConnection> Connections { get; private set; }
+        public static IDataConnections Connections { get; private set; }
 
         public static void InitializeConnection(bool database, bool textFiles)
         {
@@ -25,7 +25,7 @@ namespace StatTrackerLib.Models
             {
                 // Create the Text Connection
                 TextConnector text = new TextConnector();
-                Connections.Add(text);
+                Connections = text;
             }
         }
 
