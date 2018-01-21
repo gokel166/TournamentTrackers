@@ -35,6 +35,15 @@ namespace TrackerUI
                 return false;
             }
 
+            if (emailValue.Text.Length == 0)
+            {
+                return false;
+            }
+
+            if (cellphoneValue.Text.Length == 0)
+            {
+                return false;
+            }
             return true;
         }
     }
