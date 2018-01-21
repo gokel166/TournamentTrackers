@@ -19,7 +19,14 @@ namespace TrackerUI
 
         private void createMemberButton_Click(object sender, EventArgs e)
         {
+            if (ValidateForm())
+            {
 
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
         }
 
         private bool ValidateForm()
