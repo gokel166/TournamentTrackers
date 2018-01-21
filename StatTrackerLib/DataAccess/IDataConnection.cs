@@ -9,5 +9,6 @@ namespace StatTrackerLib.Models
     public interface IDataConnection
     {
         PrizeModel CreatePrize(PrizeModel model);
+        PersonModel CreatePerson(PersonModel model);
     }
 }
