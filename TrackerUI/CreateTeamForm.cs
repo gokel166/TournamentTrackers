@@ -24,7 +24,8 @@ namespace TrackerUI
 
         private bool ValidateForm()
         {
-
+            // TODO - Add validation to the form
+            return true;
         }
     }
 }
